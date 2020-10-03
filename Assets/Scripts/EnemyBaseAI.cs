@@ -6,7 +6,6 @@ public class EnemyBaseAI : MonoBehaviour
 {
     public float speed = 1f;
     public int iterations = 10;
-    public float radius = 0;
     public int max_line_point = 500;
     public bool smooth = true;
     public LineRenderer lineToFollow;
@@ -88,7 +87,8 @@ public class EnemyBaseAI : MonoBehaviour
             return wayPoints[index + 1];
     }
 
-    private void FollowSmooth(){
+    private void FollowSmooth()
+    {
          Vector3 anchor1 = Vector3.Lerp(Prevoius(currentPoint), Current(currentPoint), .5f);
          Vector3 anchor2 = Vector3.Lerp(Current(currentPoint), Next(currentPoint), .5f);
  
