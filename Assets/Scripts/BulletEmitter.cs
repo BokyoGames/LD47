@@ -82,6 +82,6 @@ public class BulletEmitter : MonoBehaviour
         Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
         Vector3 force_forward = this.gameObject.transform.TransformDirection(tower_direction);
         instance.AddForce(force_forward * power);
-        bullet_behaviour.AddBulletLogic(instance, tower_direction, power);
+        bullet_behaviour.AddBulletLogic(instance, tower_direction, power, angle);
     }
 }
