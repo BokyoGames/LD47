@@ -26,7 +26,7 @@ public class BulletEmitter : MonoBehaviour
 
         if(this.gameObject.transform.position.x < -5.7)
         {
-            Debug.Log("Out position");
+            // Debug.Log("Out position");
             passed_period = Time.time;
             return;
         }
