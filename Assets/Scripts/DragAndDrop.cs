@@ -74,6 +74,8 @@ public class DragAndDrop : MonoBehaviour
 
     public static bool IsInsideBoxCollider(Vector3 collider, Vector3 point)
     {
-        return Vector3.Distance(collider, point) < 1f;
+        Vector3 tmp_collider = collider;
+        tmp_collider.z = point.z;
+        return Vector3.Distance(tmp_collider, point) < 1f;
     }
 }

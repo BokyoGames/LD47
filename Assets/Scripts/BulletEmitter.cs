@@ -30,7 +30,7 @@ public class BulletEmitter : MonoBehaviour
     {
         tower_beat = GetComponent<AudioSource>();
         bullet_behaviour = GetComponent<BulletBehaviour>();
-        tower_cannon = transform.Find("Turret_Kicker_Cannon").gameObject;
+        tower_cannon = transform.Find("Turret_Cannon").gameObject;
         period = 4f/spawn_track_vector.Length;
     }
 
