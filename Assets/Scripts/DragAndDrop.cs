@@ -39,6 +39,7 @@ public class DragAndDrop : MonoBehaviour
 
         bool droppable = false;
 
+        // TODO: Move this during dragging to enable activator color and etc...
         foreach(GameObject active in activators)
         {
             if(IsInsideBoxCollider(active.transform.position, gameObject.transform.position))
