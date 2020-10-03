@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using System.Reflection;
 
 public class BulletEmitter : MonoBehaviour
 {
@@ -29,37 +30,40 @@ public class BulletEmitter : MonoBehaviour
     void Update()
     {
 
-        if(this.gameObject.transform.position.x < -5.7)
+        if(this.gameObject.transform.position.x < -5.7 || this.gameObject.transform.position.z != 0)
         {
-            // Debug.Log("Out position");
-            passed_period = Time.time;
-
             emitter_enabled = false;
             return;
         }
         else
-            emitter_enabled = true;
-
-        if(Time.time > passed_period) 
         {
-            passed_period += period;
-            
-            if(ryhme == 0)
-            {
-                tower_beat.Stop();
-                Debug.Log("Play audio");
-                tower_beat.Play();
-            }
-
-            ryhme = (ryhme + 1) % spawn_track_vector.Length;
-            if(spawn_track_vector[ryhme] != 0)
-            {    
-                Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
-                Vector3 force_forward = this.gameObject.transform.TransformDirection(Vector3.right);
-                instance.AddForce(force_forward*power);
-            }
-            
+            emitter_enabled = true;
         }
 
+
+        if(emitter_enabled)
+        {
+            float long_ryhme = Time.time % 4f;
+            
+            Debug.Log("Long ryme " + long_ryhme);
+            if(long_ryhme < Time.deltaTime)
+            {
+                tower_beat.Stop();
+                tower_beat.Play();
+                for(int i = 0; i < spawn_track_vector.Length; i++)
+                {
+                    Debug.Log("Lancio le bombe!");
+                    if(spawn_track_vector[i] != 0)
+                        Invoke("SpawnBullet", i*period);
+                }
+            }
+        }       
+    }
+
+    private void SpawnBullet()
+    {
+        Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
+        Vector3 force_forward = this.gameObject.transform.TransformDirection(Vector3.right);
+        instance.AddForce(force_forward*power);
     }
 }
