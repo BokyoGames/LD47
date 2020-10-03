@@ -274,8 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d5c03a211dd6900a42ba89f8fdf8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower_beat: {fileID: 5471598962324058310, guid: c3134beefa5714bf989b1239e779949d,
-    type: 3}
+  tower_beat: {fileID: 0}
   bullet: {fileID: 1764650621, guid: 1d63d8cf858e72e2293a94156edf21ee, type: 3}
   tower_shoot_direction:
   - {x: 1, y: 0, z: 0}
@@ -290,7 +289,7 @@ MonoBehaviour:
   power: 500
   spawn_track_vector: 0100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000
   emitter_enabled: 1
-  shopt_out_position: -5.7
+  shopt_out_position: -6.3
 --- !u!114 &2181832898344533903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +330,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9b0216af89eee49d7aed96dc2a7a2641, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cc9cd9024e0df38d9ad5211017169e2a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
