@@ -13,6 +13,7 @@ public class BulletEmitter : MonoBehaviour
     private int ryhme = 0;
 
     private float period = 4f/32;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,15 @@ public class BulletEmitter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(this.gameObject.transform.position.x < -5.7)
+        {
+            Debug.Log("Out position");
+            passed_period = Time.time;
+            return;
+        }
+
+
         if(Time.time > passed_period) 
         {
             passed_period += period;
