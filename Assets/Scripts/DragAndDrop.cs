@@ -43,20 +43,16 @@ public class DragAndDrop : MonoBehaviour
         foreach(GameObject active in activators)
         {
             if(IsInsideBoxCollider(active.transform.position, gameObject.transform.position))
-                droppable = true;
+            {
+                Vector3 final_position = new Vector3(active.transform.position.x, active.transform.position.y, final_drag_height);
+                transform.position = final_position;
+                initial_position = final_position;
+                dragging = false;
+                droppable = false;
+            }
         }
 
-        if(droppable)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
-            rayPoint.z = final_drag_height;
-            transform.position = rayPoint;
-            initial_position = rayPoint;
-            dragging = false;
-            droppable = false;
-        }
-        else
+        if(!droppable)
         {
             transform.position = initial_position;
             dragging = false;
@@ -66,7 +62,7 @@ public class DragAndDrop : MonoBehaviour
  
     void Update()
     {
-        if (dragging)
+        if(dragging)
         {
             // Debug.Log("Dragging mama!");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

@@ -8,7 +8,7 @@ public class BulletEmitter : MonoBehaviour
 {
     public AudioSource tower_beat;
     public Rigidbody2D bullet;
-    public Vector3 tower_direction = Vector3.right;
+    public List<Vector3> tower_shoot_direction = new List<Vector3>();
 
     public BulletBehaviour bullet_behaviour;
     public float power = 500f;
@@ -17,13 +17,13 @@ public class BulletEmitter : MonoBehaviour
     public bool emitter_enabled = true;
 
     public float shopt_out_position = -6.37f;
-    private float passed_period = 0.0f;
-    private int ryhme = 0;
     private GameObject tower_cannon;
     private float angle = 0.0f;
 
     private float period = 4f/32;
 
+    private Vector3 tower_direction = Vector3.right;
+    private int shot_at = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +52,6 @@ public class BulletEmitter : MonoBehaviour
         {
             float long_ryhme = Time.time % 4f;
            
-            // Debug.Log("Long ryme " + long_ryhme);
             if(long_ryhme < Time.deltaTime)
             {
                 tower_beat.Stop();
@@ -68,9 +67,10 @@ public class BulletEmitter : MonoBehaviour
 
     private void SpawnBullet()
     {
+        tower_direction = tower_shoot_direction[shot_at];
+        shot_at = (shot_at + 1) % tower_shoot_direction.Count;
+
         float new_angle = Mathf.Atan2(tower_direction.y, tower_direction.x) * Mathf.Rad2Deg;
-        
-        Debug.Log(new_angle + " =?= " + angle);
         
         if(new_angle != angle)
         {
@@ -78,7 +78,6 @@ public class BulletEmitter : MonoBehaviour
             tower_cannon.transform.Rotate(0.0f, 0.0f, angle, Space.World);
             angle = new_angle;
         }
-        // tower_cannon.transform.rotate = angle;
 
         Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
         Vector3 force_forward = this.gameObject.transform.TransformDirection(tower_direction);

@@ -177,7 +177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 70ecbab260ee1830597a87b78c3da66c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b988e0ab4682f8558bc9e31f5b381af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 331063975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1756188461361094592, guid: 45116a391b7644159ad9500e37b1f61c, type: 3}
-  period: 0.25
+  period: 0.5
   spwan_probability: 33
 --- !u!212 &848731498
 SpriteRenderer:
@@ -773,12 +773,12 @@ PrefabInstance:
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.88
+      value: -8.15
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.52
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
@@ -940,6 +940,46 @@ PrefabInstance:
       propertyPath: tower_direction.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[6].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[1].y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[3].y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[5].y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[7].y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf815d494ed1b2b559fd9a8e5052baa8, type: 3}
 --- !u!1001 &1751853862
@@ -1031,7 +1071,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.37
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
