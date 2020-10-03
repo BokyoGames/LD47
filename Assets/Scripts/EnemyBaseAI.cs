@@ -27,7 +27,7 @@ public class EnemyBaseAI : MonoBehaviour
              wayPoints = new Vector3[total];
 
              for(int i = 0; i < total; i++)
-                 wayPoints[i] = temp[i];
+                 wayPoints[i] = lineToFollow.transform.position + temp[i];
         }
     }
 
@@ -46,7 +46,7 @@ public class EnemyBaseAI : MonoBehaviour
         if(0 < wayPoints.Length)
         {
             if(smooth)
-                FollowSmooth ();
+                FollowSmooth();
             //  else {
             //      FollowClumsy ();
             //  }
@@ -66,7 +66,7 @@ public class EnemyBaseAI : MonoBehaviour
     private Vector3 Prevoius(int index)
     {
         if(0 == index) 
-            return wayPoints[wayPoints.Length - 1];
+            return wayPoints[0];
         else 
             return wayPoints[index - 1];  
     }
@@ -95,7 +95,7 @@ public class EnemyBaseAI : MonoBehaviour
          if(i < iterations) 
          {
             float currentProgress = (1f / (float)iterations) * (float)i;
-            //  transform.LookAt (Vector3.Lerp (anchor1, Current (currentPoint), currentProgress));
+            // transform.LookAt (Vector3.Lerp (anchor1, Current (currentPoint), currentProgress));
             transform.position = Vector3.Lerp(Vector3.Lerp(anchor1, Current(currentPoint), currentProgress), Vector3.Lerp(Current(currentPoint), anchor2, currentProgress), currentProgress);
             i++;
          }

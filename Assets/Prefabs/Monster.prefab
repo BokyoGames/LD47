@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
 --- !u!50 &1756188461361094592
 Rigidbody2D:
@@ -148,8 +148,7 @@ MonoBehaviour:
   iterations: 10
   max_line_point: 500
   smooth: 1
-  lineToFollow: {fileID: 3067862687564681424, guid: 81327a56ce0ae22a2ae846e7d2f038bd,
-    type: 3}
+  lineToFollow: {fileID: 0}
 --- !u!114 &1756188461361094599
 MonoBehaviour:
   m_ObjectHideFlags: 0

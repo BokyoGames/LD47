@@ -5,6 +5,7 @@ using UnityEngine;
 public class MonsterEmitter : MonoBehaviour
 {
     public Rigidbody2D monster;
+    public LineRenderer lineToFollow;
     
     public float period = 4f/32;
     public float spwan_probability = 32;
@@ -26,6 +27,8 @@ public class MonsterEmitter : MonoBehaviour
             if(Random.Range(0,31) < spwan_probability)
             {
                 Rigidbody2D instance = Instantiate(monster, transform.position, transform.rotation) as Rigidbody2D;
+                EnemyBaseAI enempy_ai = instance.GetComponent<EnemyBaseAI>();
+                enempy_ai.lineToFollow = lineToFollow;
             }
         }
     }
