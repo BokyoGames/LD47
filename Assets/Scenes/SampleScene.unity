@@ -547,6 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1756188461361094592, guid: 45116a391b7644159ad9500e37b1f61c, type: 3}
+  period: 0.125
   spwan_probability: 33
 --- !u!212 &848731498
 SpriteRenderer:
@@ -606,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848731496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.33, y: 0.3, z: 0}
+  m_LocalPosition: {x: 10.36, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1003,12 +1004,12 @@ PrefabInstance:
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.05
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.51
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
