@@ -14,6 +14,9 @@ public class BulletEmitter : AbstractEmitter
     // Start is called before the first frame update
     void Start()
     {
+        Physics2D.IgnoreLayerCollision(10, 10, true);
+        Physics2D.IgnoreLayerCollision(14, 10, true);
+        Physics2D.IgnoreLayerCollision(9, 14, true);
         tower_beat = GetComponent<AudioSource>();
         bullet_behaviour = GetComponent<BulletBehaviour>();
         tower_cannon = transform.Find("Turret_Cannon").gameObject;
