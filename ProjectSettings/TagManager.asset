@@ -10,6 +10,7 @@ TagManager:
   - Laser
   - River
   - Drop
+  - Wave
   layers:
   - Default
   - TransparentFX

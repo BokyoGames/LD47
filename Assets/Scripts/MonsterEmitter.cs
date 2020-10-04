@@ -9,8 +9,7 @@ public class MonsterEmitter : MonoBehaviour
     
     public float period = 4f/32;
     public float spwan_probability = 32;
-    private float next_spawn_time = 0.0f;
-
+    public float next_spawn_time = 0.0f;
 
     // Start is called before the first frame update
     void Start()
