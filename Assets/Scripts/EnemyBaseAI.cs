@@ -42,6 +42,10 @@ public class EnemyBaseAI : MonoBehaviour
         
         if(completed)
         {
+            
+            PlayerInfo player_info = GameObject.Find("PlayerInfo").GetComponent<PlayerInfo>();
+            player_info.life_point--;
+
             Destroy(gameObject);
             return;
         }
@@ -62,6 +66,10 @@ public class EnemyBaseAI : MonoBehaviour
         if(currentPoint == wayPoints.Length) 
         {
             completed = true;
+            
+            PlayerInfo player_info = GameObject.Find("PlayerInfo").GetComponent<PlayerInfo>();
+            player_info.life_point--;
+
             Destroy(gameObject);
         }
     }
