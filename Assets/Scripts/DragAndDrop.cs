@@ -67,6 +67,15 @@ public class DragAndDrop : MonoBehaviour
                     droppable = false;
                 }
             }
+
+            if(gameObject.transform.position.x < -6.37f)
+            {
+                Vector3 final_position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, final_drag_height);
+                transform.position = final_position;
+                initial_position = final_position;
+                dragging = false;
+                droppable = false;
+            }
         }
 
         if(!droppable)
@@ -78,7 +87,7 @@ public class DragAndDrop : MonoBehaviour
                     active.transform.GetComponent<ActivatorStatus>().occupied = true;
                 }
             }
-            
+
             transform.position = initial_position;
             dragging = false;
             droppable = false;

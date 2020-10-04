@@ -33,23 +33,33 @@ public class ShopLogic : MonoBehaviour
                 SpriteRenderer tower_base = GameObject.Find("Shop/" + name + "/Turret_Base").GetComponent<SpriteRenderer>();
                 SpriteRenderer tower_cannon = GameObject.Find("Shop/" + name + "/Turret_Cannon").GetComponent<SpriteRenderer>();
                 SpriteRenderer tower_top = GameObject.Find("Shop/" + name + "/Turret_Top").GetComponent<SpriteRenderer>();
+                SpriteRenderer light = GameObject.Find("Shop/" + name + "/TowerLight").GetComponent<SpriteRenderer>();
                 
                 if(!buyed[i])
                 {
                     if(price <= player_info.music_energy)
                     {
                         drag_and_drop.disabled = false;
-                        tower_base.color = Color.white;
-                        tower_cannon.color = Color.white;
-                        tower_top.color = Color.white;
+                        tower_base.color = new Color(0, 0, 0, 0.5f); 
+                        tower_cannon.color = new Color(0, 0, 0, 0.5f); 
+                        tower_top.color = new Color(0, 0, 0, 0.5f); 
+                        light.enabled = true;
                     }
                     else
                     {
+                        light.enabled = false;
                         drag_and_drop.disabled = true;
                         tower_base.color = new Color(0, 0, 0, 0.5f); 
                         tower_cannon.color = new Color(0, 0, 0, 0.5f); 
                         tower_top.color = new Color(0, 0, 0, 0.5f); 
                     }
+                }
+                else
+                {
+                    light.enabled = false;
+                    tower_base.color = Color.white;
+                    tower_cannon.color = Color.white;
+                    tower_top.color = Color.white;
                 }
 
                 if(tower.transform.position.x > -6.37)

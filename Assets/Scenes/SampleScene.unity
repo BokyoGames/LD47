@@ -2336,7 +2336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max_life_point: 10
   life_point: 10
-  music_energy: 0
+  music_energy: 3000
   total_score: 0
 --- !u!1 &1242597251
 GameObject:
@@ -3493,6 +3493,11 @@ PrefabInstance:
       propertyPath: tower_shoot_direction.Array.data[6].y
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 6784800200877163227, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8766147772846752329, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4288,6 +4293,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1242597254}
     m_Modifications:
+    - target: {fileID: 27850025392476279, guid: 0227df9bff0f6acaa941afd38e2cd8f1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2876989078032978149, guid: 0227df9bff0f6acaa941afd38e2cd8f1,
         type: 3}
       propertyPath: m_LocalPosition.x
