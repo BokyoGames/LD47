@@ -7,6 +7,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 727322795491809997, guid: 27fe7992d21a7c2909874b3254bf98e1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 56a9356835dc55d4eb744de6e60be7bd,
+        type: 3}
+    - target: {fileID: 1908408999060390999, guid: 27fe7992d21a7c2909874b3254bf98e1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fa27b177d919e74fa92677183b271d5,
+        type: 3}
+    - target: {fileID: 4363325259853773149, guid: 27fe7992d21a7c2909874b3254bf98e1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 48e011e845d568b4d852f5b43b02b9fe,
+        type: 3}
     - target: {fileID: 6323763271428219695, guid: 27fe7992d21a7c2909874b3254bf98e1,
         type: 3}
       propertyPath: tower_shoot_direction.Array.size
@@ -241,7 +259,7 @@ PrefabInstance:
     - target: {fileID: 6323763271428219698, guid: 27fe7992d21a7c2909874b3254bf98e1,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Base
+      value: Turret_Base Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7580260271266312159, guid: 27fe7992d21a7c2909874b3254bf98e1,
         type: 3}
