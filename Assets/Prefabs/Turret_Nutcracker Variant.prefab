@@ -25,7 +25,7 @@ PrefabInstance:
     - target: {fileID: 9136461594060445729, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.2861483
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9136461594060445729, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 9136461594060445731, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Nutcracker
+      value: Turret_Nutcracker Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9136461594060445758, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
