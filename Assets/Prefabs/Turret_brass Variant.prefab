@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1458630450953124918
+--- !u!1001 &1133014214234763325
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: 3465247968150517225, guid: 90627dab5f6b11ef1976b66f73303378,
         type: 3}
       propertyPath: m_Name
-      value: Turret_brass
+      value: Turret_brass Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3465247968150517227, guid: 90627dab5f6b11ef1976b66f73303378,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.02
+      value: 0.937
       objectReference: {fileID: 0}
     - target: {fileID: 3465247968150517227, guid: 90627dab5f6b11ef1976b66f73303378,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.48
+      value: -5.286
       objectReference: {fileID: 0}
     - target: {fileID: 3465247968150517227, guid: 90627dab5f6b11ef1976b66f73303378,
         type: 3}
@@ -122,5 +122,23 @@ PrefabInstance:
       propertyPath: tower_shoot_direction.Array.data[4].y
       value: -0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6582055586084941702, guid: 90627dab5f6b11ef1976b66f73303378,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8fea369ff17e0d441b98896185e4d499,
+        type: 3}
+    - target: {fileID: 7909013228006411286, guid: 90627dab5f6b11ef1976b66f73303378,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 50e6a1112dead48409127f39c9f93a58,
+        type: 3}
+    - target: {fileID: 9054920557149164172, guid: 90627dab5f6b11ef1976b66f73303378,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f79b5a53fec39d84b830143be4a57126,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90627dab5f6b11ef1976b66f73303378, type: 3}

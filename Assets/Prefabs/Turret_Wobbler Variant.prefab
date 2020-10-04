@@ -7,6 +7,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1550394330408960588, guid: fc62e7e6d439e40ea94ce177b3da7aca,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 32a69d87b7f180a438328e5ec6c76507,
+        type: 3}
+    - target: {fileID: 2530537435847827932, guid: fc62e7e6d439e40ea94ce177b3da7aca,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06754e64f387ffe43aebb8a9d4ee394f,
+        type: 3}
+    - target: {fileID: 3708073857680916294, guid: fc62e7e6d439e40ea94ce177b3da7aca,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7318ee38507b35147851b41dbe2dc7c1,
+        type: 3}
     - target: {fileID: 4628505073331819726, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
       propertyPath: m_audioClip
@@ -70,7 +88,7 @@ PrefabInstance:
     - target: {fileID: 9136461594060445731, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Wobbler
+      value: Turret_Wobbler Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9136461594060445758, guid: fc62e7e6d439e40ea94ce177b3da7aca,
         type: 3}
