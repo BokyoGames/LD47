@@ -4931,6 +4931,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1242597254}
     m_Modifications:
+    - target: {fileID: 1635126215666876147, guid: 8d3edd93eb697e2c190363b738982e12,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2900838366317720067, guid: 8d3edd93eb697e2c190363b738982e12,
         type: 3}
       propertyPath: linear_scale

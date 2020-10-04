@@ -37,21 +37,22 @@ public class ShopLogic : MonoBehaviour
                 
                 if(!buyed[i])
                 {
+                    Color dark = Color.black;
                     if(price <= player_info.music_energy)
                     {
                         drag_and_drop.disabled = false;
-                        tower_base.color = new Color(0, 0, 0, 0.5f); 
-                        tower_cannon.color = new Color(0, 0, 0, 0.5f); 
-                        tower_top.color = new Color(0, 0, 0, 0.5f); 
+                        tower_base.color = dark;
+                        tower_cannon.color = dark;
+                        tower_top.color = dark;
                         light.enabled = true;
                     }
                     else
                     {
                         light.enabled = false;
                         drag_and_drop.disabled = true;
-                        tower_base.color = new Color(0, 0, 0, 0.5f); 
-                        tower_cannon.color = new Color(0, 0, 0, 0.5f); 
-                        tower_top.color = new Color(0, 0, 0, 0.5f); 
+                        tower_base.color = dark;
+                        tower_cannon.color = dark;
+                        tower_top.color = dark;
                     }
                 }
                 else
