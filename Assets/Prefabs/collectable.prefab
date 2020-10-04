@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80021bfde34ba372194e3dbf2a70de42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loot_value: 100
+  loot_value: 10
 --- !u!114 &4746117885525064835
 MonoBehaviour:
   m_ObjectHideFlags: 0

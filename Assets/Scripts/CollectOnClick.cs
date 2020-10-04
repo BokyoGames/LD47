@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectOnClick : MonoBehaviour
 {
-    public int loot_value = 100;
+    public int loot_value = 10;
     private PlayerInfo player_info;
 
     // Start is called before the first frame update
