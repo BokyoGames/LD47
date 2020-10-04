@@ -50,8 +50,11 @@ public class StarCollector : AbstractEmitter
         GameObject[] drops = GameObject.FindGameObjectsWithTag("Drop");
         foreach(GameObject drop in drops)
         {
-            Vector3 force_forward = this.gameObject.transform.TransformDirection(this.gameObject.transform.position);
-            drop.GetComponent<Rigidbody2D>().AddForce(force_forward * collector_force);
+            // Vector3 force_forward = this.gameObject.transform.TransformDirection(this.gameObject.transform.position);
+            // drop.GetComponent<Rigidbody2D>().AddForce(force_forward * collector_force);
+            Vector3 direction = drop.transform.position - transform.position;
+            drop.GetComponent<Rigidbody2D>().AddForce(-collector_force * direction);
+            // drop.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.up * collector_force);
         }
     }
 

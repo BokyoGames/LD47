@@ -189,7 +189,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2800121657692696724}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.17, y: -5.83, z: 0}
   m_LocalScale: {x: 0.12, y: 0.12, z: 1}
   m_Children:
@@ -231,7 +231,7 @@ MonoBehaviour:
   spawn_track_vector: 0100000000000000000000000000000001000000000000000100000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000001000000010000000000000000000000000000000000000000000000000000000000000000000000
   shoop_out_position: -6.37
   emitter_enabled: 1
-  collector_force: 10
+  collector_force: 3
 --- !u!58 &7173996056468906659
 CircleCollider2D:
   m_ObjectHideFlags: 0
