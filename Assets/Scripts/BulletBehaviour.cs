@@ -13,7 +13,6 @@ public class BulletBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void AddBulletLogic(Rigidbody2D instance, Vector3 direction, float power, float angle)
