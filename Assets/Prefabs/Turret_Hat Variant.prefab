@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6796264820372658576, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00824531
+      objectReference: {fileID: 0}
+    - target: {fileID: -6796264820372658576, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Radius
+      value: 4.2853637
+      objectReference: {fileID: 0}
     - target: {fileID: 1131196854059789864, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_Sprite
@@ -50,6 +60,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 9841304db0ae7e03a80b67563a70f17e, type: 3}
+    - target: {fileID: 6488853844175550634, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0.51446867
+      objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320324, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_Sprite

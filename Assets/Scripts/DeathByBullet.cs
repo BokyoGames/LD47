@@ -23,7 +23,7 @@ public class DeathByBullet : MonoBehaviour
     {
         if(drop)
             drop.DropLoot();
-            
+
         Destroy(gameObject);
     }
 
@@ -32,6 +32,23 @@ public class DeathByBullet : MonoBehaviour
         if(collision.gameObject.CompareTag("Bullet"))
         {
             Destroy(collision.gameObject);
+            Die();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if(collision.gameObject.CompareTag("Laser"))
+        {
+            Debug.Log("Shoot by laser!");
+            Die();
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision) 
+    {
+        if(collision.gameObject.CompareTag("Laser"))
+        {
+            Debug.Log("Shoot by laser!");
             Die();
         }
     }

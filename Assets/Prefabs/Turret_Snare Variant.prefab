@@ -12,16 +12,44 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6796264820372658576, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0072697806
+      objectReference: {fileID: 0}
+    - target: {fileID: -6796264820372658576, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Radius
+      value: 4.189541
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131196854059789864, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9633d8d01060d312b89a113fe5edd0a4,
+        type: 3}
     - target: {fileID: 2293110622704716950, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_Name
       value: Turret_Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 2973347037353874210, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0abf7e2dccbbb7e08a0e9993c8c54db,
+        type: 3}
     - target: {fileID: 3940535117834058058, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: direction.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4118696364337139128, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b2a93e6a662e545bacedfd37c83d6ea,
+        type: 3}
     - target: {fileID: 6488853844175550634, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_audioClip
@@ -30,12 +58,12 @@ PrefabInstance:
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.95
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.68
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 7277238172964320325, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}

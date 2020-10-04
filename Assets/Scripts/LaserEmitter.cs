@@ -1,24 +1,23 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
-using System.Reflection;
 
-public class BulletEmitter : AbstractEmitter
+public class LaserEmitter : AbstractEmitter
 {
-    public Rigidbody2D bullet;
-    public BulletBehaviour bullet_behaviour;
-    public float power = 500f;
-    public float linear_scale = 0;
-    private Vector3 bullet_scale;
+    public List<float> tower_shoot_duration = new List<float>();
+
+    public LineRenderer line;
+    public Material line_material;
+    private EdgeCollider2D edge;
+
+
     // Start is called before the first frame update
     void Start()
     {
         tower_beat = GetComponent<AudioSource>();
-        bullet_behaviour = GetComponent<BulletBehaviour>();
         tower_cannon = transform.Find("Turret_Cannon").gameObject;
         period = 4f/spawn_track_vector.Length;
-        bullet_scale = new Vector3(linear_scale,linear_scale, 0);
+        edge = line.GetComponent<EdgeCollider2D>();
     }
 
     // Update is called once per frame
@@ -46,7 +45,7 @@ public class BulletEmitter : AbstractEmitter
                 for(int i = 0; i < spawn_track_vector.Length; i++)
                 {
                     if(spawn_track_vector[i] != 0)
-                        Invoke("SpawnBullet", i*period);
+                        Invoke("SpawnBullet", i * period);
                 }
             }
         }       
@@ -55,6 +54,7 @@ public class BulletEmitter : AbstractEmitter
     public override void SpawnBullet()
     {
         tower_direction = tower_shoot_direction[shot_at];
+        float expiration = tower_shoot_duration[shot_at];
         shot_at = (shot_at + 1) % tower_shoot_direction.Count;
 
         float new_angle = Mathf.Atan2(tower_direction.y, tower_direction.x) * Mathf.Rad2Deg;
@@ -66,10 +66,24 @@ public class BulletEmitter : AbstractEmitter
             angle = new_angle;
         }
 
-        Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
-        instance.transform.localScale += bullet_scale;
-        Vector3 force_forward = this.gameObject.transform.TransformDirection(tower_direction);
-        instance.AddForce(force_forward * power);
-        bullet_behaviour.AddBulletLogic(instance, tower_direction, power, angle);
+        // line.SetPosition(0, tower_cannon.transform.GetComponent<Renderer>().bounds.center);
+        line.SetPosition(1, tower_direction);
+
+        List<Vector2> colliderPoints2 = new List<Vector2>();
+        colliderPoints2.Add(line.GetPosition(0));
+        colliderPoints2.Add(tower_direction);
+        edge.points = colliderPoints2.ToArray();
+
+        line.enabled = true;
+        Invoke("DespawnBullet", expiration * period);
+    }
+
+    private void DespawnBullet()
+    {
+        List<Vector2> colliderPoints2 = new List<Vector2>();
+        colliderPoints2.Add(line.GetPosition(0));
+        colliderPoints2.Add(line.GetPosition(0));
+        edge.points = colliderPoints2.ToArray();
+        line.enabled = false;
     }
 }

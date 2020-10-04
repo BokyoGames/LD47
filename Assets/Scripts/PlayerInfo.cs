@@ -24,7 +24,6 @@ public class PlayerInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Energy: "+music_energy);
         ui_energy.text = music_energy.ToString();
         ui_total_score.text = total_score.ToString();
     }
