@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Laser
   - River
+  - Drop
   layers:
   - Default
   - TransparentFX
