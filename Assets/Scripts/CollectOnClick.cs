@@ -10,7 +10,7 @@ public class CollectOnClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player_info = GameObject.Find("/PlayerInfo").GetComponent<PlayerInfo>();
+        player_info = GameObject.Find("PlayerInfo").GetComponent<PlayerInfo>();
     }
 
     // Update is called once per frame
@@ -18,9 +18,10 @@ public class CollectOnClick : MonoBehaviour
     {
     }
 
-    void OnMouseDown()
+    void OnMouseEnter()
     {
         player_info.AddEnergy(loot_value);
         Destroy(gameObject);
     }
+
 }
