@@ -19,6 +19,7 @@ public class EnemyBaseAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Physics2D.IgnoreLayerCollision(10, 10, true);
         Vector3 [] temp = new Vector3[max_line_point];
         int total = 0;
         if(lineToFollow != null)

@@ -13,6 +13,8 @@ public class BulletEmitter : MonoBehaviour
     public BulletBehaviour bullet_behaviour;
     public float power = 500f;
 
+    public float linear_scale = 0;
+
     public int[] spawn_track_vector = {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0};
     public bool emitter_enabled = true;
 
@@ -25,6 +27,7 @@ public class BulletEmitter : MonoBehaviour
     private Vector3 tower_direction = Vector3.right;
     private int shot_at = 0;
 
+    private Vector3 bullet_scale;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,7 @@ public class BulletEmitter : MonoBehaviour
         bullet_behaviour = GetComponent<BulletBehaviour>();
         tower_cannon = transform.Find("Turret_Cannon").gameObject;
         period = 4f/spawn_track_vector.Length;
+        bullet_scale = new Vector3(linear_scale,linear_scale, 0);
     }
 
     // Update is called once per frame
@@ -80,6 +84,7 @@ public class BulletEmitter : MonoBehaviour
         }
 
         Rigidbody2D instance = Instantiate(bullet, this.gameObject.transform.position, this.gameObject.transform.rotation) as Rigidbody2D;
+        instance.transform.localScale += bullet_scale;
         Vector3 force_forward = this.gameObject.transform.TransformDirection(tower_direction);
         instance.AddForce(force_forward * power);
         bullet_behaviour.AddBulletLogic(instance, tower_direction, power, angle);
