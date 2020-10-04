@@ -40,7 +40,6 @@ public class DeathByBullet : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Laser"))
         {
-            Debug.Log("Shoot by laser!");
             Die();
         }
     }

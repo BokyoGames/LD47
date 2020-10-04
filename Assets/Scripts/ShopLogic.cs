@@ -6,12 +6,15 @@ public class ShopLogic : MonoBehaviour
 {
     public List<int> prices = new List<int>();
     public List<string> tower_name = new List<string>();
+    private List<bool> buyed = new List<bool>();
 
     private PlayerInfo player_info;
     // Start is called before the first frame update
     void Start()
     {
         player_info = GameObject.Find("PlayerInfo").GetComponent<PlayerInfo>();
+        foreach(int price in prices)
+            buyed.Add(false);
     }
 
     // Update is called once per frame
@@ -31,22 +34,38 @@ public class ShopLogic : MonoBehaviour
                 SpriteRenderer tower_cannon = GameObject.Find("Shop/" + name + "/Turret_Cannon").GetComponent<SpriteRenderer>();
                 SpriteRenderer tower_top = GameObject.Find("Shop/" + name + "/Turret_Top").GetComponent<SpriteRenderer>();
                 
-                if(price <= player_info.music_energy)
+                if(!buyed[i])
                 {
-                    drag_and_drop.disabled = false;
-                    tower_base.color = Color.white;
-                    tower_cannon.color = Color.white;
-                    tower_top.color = Color.white;
+                    if(price <= player_info.music_energy)
+                    {
+                        drag_and_drop.disabled = false;
+                        tower_base.color = Color.white;
+                        tower_cannon.color = Color.white;
+                        tower_top.color = Color.white;
+                    }
+                    else
+                    {
+                        drag_and_drop.disabled = true;
+                        tower_base.color = new Color(0, 0, 0, 0.5f); 
+                        tower_cannon.color = new Color(0, 0, 0, 0.5f); 
+                        tower_top.color = new Color(0, 0, 0, 0.5f); 
+                    }
                 }
-                else
+
+                if(tower.transform.position.x > -6.37)
                 {
-                    drag_and_drop.disabled = true;
-                    tower_base.color = new Color(0, 0, 0, 0.5f); 
-                    tower_cannon.color = new Color(0, 0, 0, 0.5f); 
-                    tower_top.color = new Color(0, 0, 0, 0.5f); 
+                    if(!buyed[i])
+                    {
+                        Debug.Log("Spend money on tower");
+                        player_info.music_energy -= price;
+                        buyed[i] = true;
+                        drag_and_drop.disabled = false;
+                        tower_base.color = Color.white;
+                        tower_cannon.color = Color.white;
+                        tower_top.color = Color.white;
+                    }
                 }
-            }
-            
+            }            
         }
     }
 }
