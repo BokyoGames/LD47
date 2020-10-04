@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4106742094260324853}
   - component: {fileID: 2973347037353874210}
   m_Layer: 0
-  m_Name: Turret_Kicker_Cannon
+  m_Name: Turret_Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8525143201392786537}
   - component: {fileID: 4118696364337139128}
   m_Layer: 0
-  m_Name: Turret_Kicker_Top
+  m_Name: Turret_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 4630512188682097187}
   - component: {fileID: 1131196854059789864}
   m_Layer: 0
-  m_Name: Turret_Kicker_Base
+  m_Name: Turret_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20829da661e89ff5855bf68ff536f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
   drag_height: -1
   final_drag_height: 0
 --- !u!58 &-6796264820372658576

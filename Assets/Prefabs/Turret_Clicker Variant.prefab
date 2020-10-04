@@ -485,6 +485,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8436844941671870453, guid: a6c7434be12b0b6d39fe03fc231f6f1e,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret_Top
+      objectReference: {fileID: 0}
     - target: {fileID: 8799866700283026516, guid: a6c7434be12b0b6d39fe03fc231f6f1e,
         type: 3}
       propertyPath: m_audioClip

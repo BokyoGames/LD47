@@ -53,7 +53,7 @@ PrefabInstance:
     - target: {fileID: 6127098729134377739, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Hat_Top
+      value: Turret_Top
       objectReference: {fileID: 0}
     - target: {fileID: 6488853844175550634, guid: bf815d494ed1b2b559fd9a8e5052baa8,
         type: 3}

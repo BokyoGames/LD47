@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
+    public bool disabled = false;
     public float drag_height = -1.0f;
     public float final_drag_height = 0.0f;
     private bool dragging = false;
@@ -25,6 +26,9 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseDown()
     {
+        if(disabled)
+            return;
+            
         Debug.Log("Mouse down");
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
         dragging = true;
@@ -62,6 +66,9 @@ public class DragAndDrop : MonoBehaviour
  
     void Update()
     {
+        if(disabled)
+            return;
+
         if(dragging)
         {
             // Debug.Log("Dragging mama!");
