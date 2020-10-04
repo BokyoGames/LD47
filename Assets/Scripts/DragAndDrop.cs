@@ -32,6 +32,14 @@ public class DragAndDrop : MonoBehaviour
         Debug.Log("Mouse down");
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
         dragging = true;
+
+        foreach(GameObject active in activators)
+        {
+            if(IsInsideBoxCollider(active.transform.position, gameObject.transform.position))
+            {
+                active.transform.GetComponent<ActivatorStatus>().occupied = false;
+            }
+        }
     }
  
     void OnMouseUp()
@@ -63,6 +71,14 @@ public class DragAndDrop : MonoBehaviour
 
         if(!droppable)
         {
+            foreach(GameObject active in activators)
+            {
+                if(IsInsideBoxCollider(active.transform.position, initial_position))
+                {
+                    active.transform.GetComponent<ActivatorStatus>().occupied = true;
+                }
+            }
+            
             transform.position = initial_position;
             dragging = false;
             droppable = false;
