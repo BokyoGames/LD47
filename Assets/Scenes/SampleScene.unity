@@ -2368,7 +2368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e15cee346988d3481463e4d11bcba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prices: 64000000fa000000f4010000e80300003cf6ffffc4090000fa000000e8030000
+  prices: 64000000fa000000f4010000e8030000d0070000d0070000fa000000e8030000f4010000f4010000e8030000e8030000d0070000
   tower_name:
   - Turret_Hat
   - Turret_Snare
@@ -2378,6 +2378,11 @@ MonoBehaviour:
   - Turret_Wave
   - Turret_Base
   - Turret_Popper
+  - Turret_Nutcracker
+  - Turret_Wobbler
+  - Turret_brass
+  - Turret_Stringer
+  - Turret_Dancer
 --- !u!212 &1242597253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3463,6 +3468,31 @@ PrefabInstance:
       propertyPath: tower_shoot_duration.Array.data[10]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[0].y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[1].y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[4].y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[5].y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[6].y
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 8766147772846752329, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4347,6 +4377,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1242597254}
     m_Modifications:
+    - target: {fileID: 2810954028381341001, guid: 990f5d14e6ec2b3dd911c8c16dc34acf,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[1].y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810954028381341001, guid: 990f5d14e6ec2b3dd911c8c16dc34acf,
+        type: 3}
+      propertyPath: tower_shoot_direction.Array.data[3].y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7464139739423781689, guid: 990f5d14e6ec2b3dd911c8c16dc34acf,
         type: 3}
       propertyPath: m_Name
