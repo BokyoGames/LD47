@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class DeathByBullet : MonoBehaviour
 {
+
+    DropOnDeath drop;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        drop = GetComponent<DropOnDeath>();
     }
 
     // Update is called once per frame
@@ -18,6 +21,9 @@ public class DeathByBullet : MonoBehaviour
 
     private void Die()
     {
+        if(drop)
+            drop.DropLoot();
+            
         Destroy(gameObject);
     }
 
