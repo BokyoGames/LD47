@@ -550,9 +550,11 @@ GameObject:
   m_Component:
   - component: {fileID: 844628417}
   - component: {fileID: 844628416}
-  m_Layer: 0
+  - component: {fileID: 844628419}
+  - component: {fileID: 844628418}
+  m_Layer: 14
   m_Name: LineRiver
-  m_TagString: Untagged
+  m_TagString: River
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,23 +600,23 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -1.5085065, y: 5.800315, z: 0}
-  - {x: -1.2535465, y: 5.226654, z: 1}
-  - {x: -0.79674584, y: 4.791104, z: -6.7746654}
-  - {x: -0.37181497, y: 4.3449244, z: -6.7746654}
-  - {x: -0.39306152, y: 3.8350053, z: -6.7746654}
-  - {x: -0.7330065, y: 3.346334, z: -7.515625}
-  - {x: -0.90297884, y: 2.8576632, z: -7.515625}
-  - {x: -0.92422557, y: 2.284006, z: -7.515625}
-  - {x: -0.64802015, y: 1.6466086, z: -7.515625}
-  - {x: -0.35056818, y: 1.0304587, z: -7.515625}
-  - {x: -0.26558205, y: 0.43555474, z: -7.515625}
-  - {x: -0.32932174, y: -0.095609486, z: -7.515625}
-  - {x: -0.39306143, y: -0.4780476, z: -7.515625}
-  - {x: -0.62677366, y: -1.0729514, z: -7.515625}
-  - {x: -0.81799275, y: -1.5616225, z: -7.515625}
-  - {x: -1.0304583, y: -2.0715404, z: -7.515625}
-  - {x: -1.1366912, y: -2.6451974, z: -7.515625}
-  - {x: -1.1366912, y: -3.1551147, z: -7.515625}
+  - {x: -1.2535465, y: 5.226654, z: 0}
+  - {x: -0.79674584, y: 4.791104, z: 0}
+  - {x: -0.37181497, y: 4.3449244, z: 0}
+  - {x: -0.39306152, y: 3.8350053, z: 0}
+  - {x: -0.7330065, y: 3.346334, z: 0}
+  - {x: -0.90297884, y: 2.8576632, z: 0}
+  - {x: -0.92422557, y: 2.284006, z: 0}
+  - {x: -0.64802015, y: 1.6466086, z: 0}
+  - {x: -0.35056818, y: 1.0304587, z: 0}
+  - {x: -0.26558205, y: 0.43555474, z: 0}
+  - {x: -0.32932174, y: -0.095609486, z: 0}
+  - {x: -0.39306143, y: -0.4780476, z: 0}
+  - {x: -0.62677366, y: -1.0729514, z: 0}
+  - {x: -0.81799275, y: -1.5616225, z: 0}
+  - {x: -1.0304583, y: -2.0715404, z: 0}
+  - {x: -1.1366912, y: -2.6451974, z: 0}
+  - {x: -1.1366912, y: -3.1551147, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -684,6 +686,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &844628418
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844628415}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &844628419
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844628415}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.508507, y: 5.800315}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
+  - {x: -0.21558207, y: 1.3226002}
 --- !u!1 &848731496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1309,7 @@ Transform:
   - {fileID: 2092758206}
   - {fileID: 7334704327799961480}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1294615600
 PrefabInstance:
@@ -1763,6 +1820,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4945891861312625369, guid: 6ef04f02d2116da4bb4e0d9606fd933a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6832983526634834132, guid: 6ef04f02d2116da4bb4e0d9606fd933a,
         type: 3}
       propertyPath: m_Name

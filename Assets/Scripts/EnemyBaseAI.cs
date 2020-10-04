@@ -20,6 +20,8 @@ public class EnemyBaseAI : MonoBehaviour
     void Start()
     {
         Physics2D.IgnoreLayerCollision(10, 10, true);
+        // Physics2D.IgnoreLayerCollision(14, 10, true);
+        Physics2D.IgnoreLayerCollision(9, 14, true);
         Vector3 [] temp = new Vector3[max_line_point];
         int total = 0;
         if(lineToFollow != null)
