@@ -48,11 +48,16 @@ public class DragAndDrop : MonoBehaviour
         {
             if(IsInsideBoxCollider(active.transform.position, gameObject.transform.position))
             {
-                Vector3 final_position = new Vector3(active.transform.position.x, active.transform.position.y, final_drag_height);
-                transform.position = final_position;
-                initial_position = final_position;
-                dragging = false;
-                droppable = false;
+                if(!active.transform.GetComponent<ActivatorStatus>().occupied)
+                {
+                    active.transform.GetComponent<ActivatorStatus>().occupied = true;
+
+                    Vector3 final_position = new Vector3(active.transform.position.x, active.transform.position.y, final_drag_height);
+                    transform.position = final_position;
+                    initial_position = final_position;
+                    dragging = false;
+                    droppable = false;
+                }
             }
         }
 
