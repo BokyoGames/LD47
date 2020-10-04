@@ -33,7 +33,7 @@ public class PlayerInfo : MonoBehaviour
 
         for(int i = 0; i < max_life_point; i++)
         {
-            if(i > life_point)
+            if(i >= life_point)
                 health_bar[i].color = Color.black;
         }
     }
