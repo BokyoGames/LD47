@@ -42,6 +42,13 @@ public class ShopLogic : MonoBehaviour
                     Color dark = Color.black;
                     if(price <= player_info.music_energy)
                     {
+                        if(!displayed_tutorial)
+                        {
+                            TutorialMessage tutorial = GameObject.Find("Tutorial").GetComponent<TutorialMessage>();
+                            tutorial.DisplayEnergyMessage();
+                            displayed_tutorial = true;
+                        }
+                        
                         drag_and_drop.disabled = false;
                         tower_base.color = dark;
                         tower_cannon.color = dark;
@@ -50,13 +57,6 @@ public class ShopLogic : MonoBehaviour
                     }
                     else
                     {
-                        if(!displayed_tutorial)
-                        {
-                            TutorialMessage tutorial = GameObject.Find("Tutorial").GetComponent<TutorialMessage>();
-                            tutorial.DisplayEnergyMessage();
-                            displayed_tutorial = true;
-                        }
-
                         light.enabled = false;
                         drag_and_drop.disabled = true;
                         tower_base.color = dark;

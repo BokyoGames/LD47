@@ -21,6 +21,6 @@ public class BarLoop : MonoBehaviour
         if(long_ryhme < Time.deltaTime)
             transform.position = starting_position;
         else
-            transform.Translate(+speed*Time.deltaTime, 0, 0);
+            transform.Translate(+speed * Time.deltaTime, 0, 0);
     }
 }

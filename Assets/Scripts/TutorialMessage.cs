@@ -17,17 +17,20 @@ public class TutorialMessage : MonoBehaviour
         "“General Thunderer, our enemies will soon be starting an aerial attack against our base! Our low frequency sound waves are completely ineffective against flying units... and, as if this wasn’t enough, they seem to be able to dodge our Lasers as well!”"
     };
 
-    private float[] timer = {0, 8, 16, 24};
+    private float[] timer = {0, 8, 16, 24, 72, 120};
     private float[] timer_energy = {8, 16};
 
     private int mex_index = 0; 
 
     private Text ui_tutorial;
 
+    private CanvasGroup canvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        ui_tutorial = GameObject.Find("Tutorial").GetComponent<Text>();
+        ui_tutorial = GetComponent<Text>();
+        canvas = GetComponent<CanvasGroup>();
         
         for(int i=0; i<timer.Length; i++)
             Invoke("DisplayMessage", timer[i]);
@@ -42,6 +45,7 @@ public class TutorialMessage : MonoBehaviour
     void DisplayMessage()
     {
         ui_tutorial.enabled = true;
+        canvas.alpha = 1f;
         ui_tutorial.text = message[mex_index];
         mex_index++;
         Invoke("HideMessage", 7.5f);
@@ -50,14 +54,15 @@ public class TutorialMessage : MonoBehaviour
     void HideMessage()
     {
         ui_tutorial.enabled = false;
+        canvas.alpha = 0f;
     }
 
     public void DisplayEnergyMessage()
     {
         mex_index = 4;
         DisplayMessage();
-        
-        for(int i=0; i<timer_energy.Length; i++)
-            Invoke("DisplayMessage", timer_energy[i] + Time.time);
+
+        for(int i=0; i < timer_energy.Length; i++)
+            Invoke("DisplayMessage", timer_energy[i]);
     }
 }
