@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 277806161717228165, guid: 8754bbadb2088267ea0cd2ee8f143486,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Stringer
+      value: Turret_Stringer Variant
       objectReference: {fileID: 0}
     - target: {fileID: 277806161717228167, guid: 8754bbadb2088267ea0cd2ee8f143486,
         type: 3}
@@ -172,5 +172,23 @@ PrefabInstance:
       propertyPath: tower_shoot_duration.Array.data[5]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5648769386686879200, guid: 8754bbadb2088267ea0cd2ee8f143486,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c0074c369622b8488d2efa432eeaa51,
+        type: 3}
+    - target: {fileID: 6777787907859057530, guid: 8754bbadb2088267ea0cd2ee8f143486,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 503264b99b73c0340a4601b7c70ae8a7,
+        type: 3}
+    - target: {fileID: 7536166217152162026, guid: 8754bbadb2088267ea0cd2ee8f143486,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 123f7d0dce15d5d4ca56e5ac1269d682,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8754bbadb2088267ea0cd2ee8f143486, type: 3}
