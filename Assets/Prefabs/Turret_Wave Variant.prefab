@@ -7,6 +7,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1362546626881280036, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 39b1615c04359f0489ab7e7a4a848669,
+        type: 3}
+    - target: {fileID: 2626410013789109172, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3e76de2b6b92624fa72d8904c418042,
+        type: 3}
+    - target: {fileID: 3754064865822483758, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ae230b94476a994eba46a6823bd8005,
+        type: 3}
     - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: tower_shoot_direction.Array.size
@@ -175,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 8766147772846752331, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_Name
-      value: Turret_Wave
+      value: Turret_Wave Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4e19b2003e958af992c5ebaddcfdd5f, type: 3}
