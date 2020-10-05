@@ -51,7 +51,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c07c00f2bd797f247a8777774d42e15b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -560,6 +560,7 @@ MonoBehaviour:
   tower_id: 9
   tower_name: The Stabber
   tower_description: Emits short lasers in different directions.
+  price: 0
   tower_beat: {fileID: 0}
   tower_shoot_direction:
   - {x: 100, y: 0, z: 0}
