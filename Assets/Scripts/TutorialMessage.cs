@@ -7,8 +7,8 @@ public class TutorialMessage : MonoBehaviour
 {
     private string[] message = {
         "“General Thunderer, it is truly an honor to serve under your command in this epic battle. My name is Colonel Fuzzian Whaer and I am your Assigned Tactical Assistant.”",
-        "“Every turret we possess is automated and has a different firing pattern. You can see the rhythm of all active turrets clearly in the track below the battlefield.”",
-        "“Sir, our enemies are attacking! If one of them reaches our base, they will damage it. You can see our structure integrity next to the firing pattern track. We can’t let it drop to 0!”",
+        "“Every turret we possess is automated and has a different firing pattern. You can hover over the turrets to check their name, price and description.”",
+        "“Sir, our enemies are attacking! If one of them reaches our base, they will damage it. You can see our structure integrity to the left of this message box. We can’t let it drop to 0!”",
         "“General, our enemies are dropping 8Beats on the ground as they fall. I wonder how they got hold of our local currency… Anyway, you can collect it from the battlefield using your cursor!”",
         "“You have now collected enough 8Beats to buy and activate another turret. Choose one you like from the reserves, then drag it into position and let it wreak havoc on the invasors!”",
         "“You can always decide to replace an active turret by dragging it to another free slot (or back to the reserves) and placing another one in its previously occupied slot.”",
