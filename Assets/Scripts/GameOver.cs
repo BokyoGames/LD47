@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -29,8 +30,9 @@ public class GameOver : MonoBehaviour
     
     public void QuitGame()
     {
-        Debug.Log ("Close the app");
-        Application.Quit();
+        // Debug.Log ("Close the app");
+        // Application.Quit();
+        SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Single);
     }
 
     public void DownloadTrack()
