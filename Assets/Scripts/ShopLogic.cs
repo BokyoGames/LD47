@@ -39,7 +39,9 @@ public class ShopLogic : MonoBehaviour
                 
                 if(!buyed[i])
                 {
-                    Color dark = Color.black;
+                    // Color dark = Color.black;
+                    Color dark = new Color(0.32f, 0.32f, 0.32f, 1f);
+
                     if(price <= player_info.music_energy)
                     {
                         if(!displayed_tutorial)
