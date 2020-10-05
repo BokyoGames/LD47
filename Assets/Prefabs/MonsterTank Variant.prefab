@@ -48,6 +48,11 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1756188461361094596, guid: 45116a391b7644159ad9500e37b1f61c,
+        type: 3}
+      propertyPath: speed
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1756188461361094597, guid: 45116a391b7644159ad9500e37b1f61c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -116,7 +121,7 @@ PrefabInstance:
     - target: {fileID: 1756188461361094599, guid: 45116a391b7644159ad9500e37b1f61c,
         type: 3}
       propertyPath: max_life_point
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45116a391b7644159ad9500e37b1f61c, type: 3}
