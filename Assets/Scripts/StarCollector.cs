@@ -65,7 +65,7 @@ public class StarCollector : AbstractEmitter
         if(collision.gameObject.CompareTag("Drop"))
         {
             CollectOnClick drop = collision.gameObject.GetComponent<CollectOnClick>();
-            player_info.music_energy += drop.loot_value;
+            player_info.AddEnergy(drop.loot_value);
             Destroy(collision.gameObject);
         }
     }
