@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class AbstractEmitter : MonoBehaviour
 {
+    public string tower_id = "0";
     public AudioSource tower_beat;
     public List<Vector3> tower_shoot_direction = new List<Vector3>();
     public int[] spawn_track_vector = {1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0};

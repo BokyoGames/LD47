@@ -48,7 +48,7 @@ public class ShopLogic : MonoBehaviour
                             tutorial.DisplayEnergyMessage();
                             displayed_tutorial = true;
                         }
-                        
+
                         drag_and_drop.disabled = false;
                         tower_base.color = dark;
                         tower_cannon.color = dark;

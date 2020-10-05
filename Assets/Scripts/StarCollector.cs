@@ -20,11 +20,13 @@ public class StarCollector : AbstractEmitter
     {
         if(this.gameObject.transform.position.x < shoop_out_position || this.gameObject.transform.position.z != 0)
         {
+            MusicStatic.DisableTrack(tower_id);
             emitter_enabled = false;
             return;
         }
         else
         {
+            MusicStatic.EnableTrack(tower_id);
             emitter_enabled = true;
         }
 

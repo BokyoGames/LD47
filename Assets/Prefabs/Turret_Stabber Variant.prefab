@@ -557,6 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fecfebf96e08ea4da145e2c470a85bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tower_id: 9
   tower_beat: {fileID: 0}
   tower_shoot_direction:
   - {x: 100, y: 0, z: 0}

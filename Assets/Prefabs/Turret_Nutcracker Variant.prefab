@@ -165,5 +165,10 @@ PrefabInstance:
       propertyPath: tower_shoot_direction.Array.data[5].y
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 9136461594060445758, guid: fc62e7e6d439e40ea94ce177b3da7aca,
+        type: 3}
+      propertyPath: tower_id
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc62e7e6d439e40ea94ce177b3da7aca, type: 3}

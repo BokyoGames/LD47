@@ -205,6 +205,11 @@ PrefabInstance:
       propertyPath: tower_shoot_direction.Array.data[7].y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_id
+      value: B
+      objectReference: {fileID: 0}
     - target: {fileID: 5140691069774417574, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_audioClip

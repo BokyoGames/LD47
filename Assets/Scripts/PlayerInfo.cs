@@ -31,6 +31,7 @@ public class PlayerInfo : MonoBehaviour
     {
         ui_energy.text = music_energy.ToString();
         ui_total_score.text = total_score.ToString();
+        PlayerStatic.total_score = total_score;
 
         for(int i = 0; i < max_life_point; i++)
         {
