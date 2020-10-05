@@ -7,6 +7,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1362546626881280036, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cc658aec14312cb4b98a848d63e91f03,
+        type: 3}
+    - target: {fileID: 2626410013789109172, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e15f2eb9f10fc8144aff36e7bc83fdd1,
+        type: 3}
+    - target: {fileID: 3754064865822483758, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 64756fbb2e62c8748858eefb392557fc,
+        type: 3}
     - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: tower_shoot_direction.Array.size
