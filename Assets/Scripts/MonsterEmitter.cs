@@ -14,7 +14,7 @@ public class MonsterEmitter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        next_spawn_time = Time.time + next_spawn_time;
     }
 
     // Update is called once per frame

@@ -14,7 +14,7 @@ public class TutorialMessage : MonoBehaviour
         "“You can always decide to replace an active turret by dragging it to another free slot (or back to the reserves) and placing another one in its previously occupied slot.”",
         "“I will now let you lead our defenses by yourself. I will come to speak to you again if we receive any relevant information regarding our enemies. For Shakeassion VII!”",
         "“Sir, our spotters reported that the humans are deploying stronger units! These Tanks, as they call them, are much more resilient than their regular infantry troops: be ready!”",
-        "“General Thunderer, our enemies will soon be starting an aerial attack against our base! Our low frequency sound waves are completely ineffective against flying units... and, as if this wasn’t enough, they seem to be able to dodge our Lasers as well!”"
+        "“General Thunderer, our enemies are starting an aerial attack against our base! Our low frequency waves are completely ineffective against flying units... and, as if this wasn’t enough, they seem to be able to dodge our Lasers as well!”"
     };
 
     private float[] timer = {0, 8, 16, 24, 72, 120};
