@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WhaveBehaviour : MonoBehaviour
 {
-    private Vector3 bullet_scale = new Vector3(0.02f, 0.02f, 0);
+    private Vector3 bullet_scale = new Vector3(0.6f, 0.6f, 0);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,6 @@ public class WhaveBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale += bullet_scale;   
+        transform.localScale += bullet_scale * Time.deltaTime;   
     }
 }
