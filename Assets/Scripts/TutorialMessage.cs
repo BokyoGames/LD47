@@ -26,11 +26,14 @@ public class TutorialMessage : MonoBehaviour
 
     private CanvasGroup canvas;
 
+    private AudioSource alarm;
+
     // Start is called before the first frame update
     void Start()
     {
         ui_tutorial = GetComponent<Text>();
         canvas = GetComponent<CanvasGroup>();
+        alarm = GetComponent<AudioSource>();
         
         for(int i=0; i<timer.Length; i++)
             Invoke("DisplayMessage", timer[i]);
@@ -44,6 +47,7 @@ public class TutorialMessage : MonoBehaviour
 
     void DisplayMessage()
     {
+        alarm.Play();
         ui_tutorial.enabled = true;
         canvas.alpha = 1f;
         ui_tutorial.text = message[mex_index];
