@@ -729,7 +729,6 @@ GameObject:
   - component: {fileID: 419695251}
   - component: {fileID: 419695254}
   - component: {fileID: 419695253}
-  - component: {fileID: 419695252}
   m_Layer: 5
   m_Name: TowerName
   m_TagString: Untagged
@@ -746,29 +745,16 @@ RectTransform:
   m_GameObject: {fileID: 419695250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000176, y: 1.000176, z: 1.000176}
-  m_Children:
-  - {fileID: 1854497650}
-  m_Father: {fileID: 506644531}
-  m_RootOrder: 2
+  m_LocalScale: {x: 1.0001756, y: 1.0001756, z: 1.0001756}
+  m_Children: []
+  m_Father: {fileID: 1854497650}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.4, y: -254.3}
+  m_AnchoredPosition: {x: -0.0178833, y: 0.005706787}
   m_SizeDelta: {x: 262.45544, y: 48.11261}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &419695252
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419695250}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!114 &419695253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,7 +978,7 @@ RectTransform:
   m_Children:
   - {fileID: 1190534535}
   - {fileID: 1078721256}
-  - {fileID: 419695251}
+  - {fileID: 1854497650}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4195,8 +4181,9 @@ GameObject:
   - component: {fileID: 1854497650}
   - component: {fileID: 1854497652}
   - component: {fileID: 1854497651}
+  - component: {fileID: 1854497653}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TowerPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4210,16 +4197,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854497649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99982405, y: 0.99982405, z: 0.99982405}
-  m_Children: []
-  m_Father: {fileID: 419695251}
-  m_RootOrder: 0
+  m_LocalPosition: {x: 0, y: 0, z: 1.0001732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 419695251}
+  m_Father: {fileID: 506644531}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 367.33533, y: 254.25525}
-  m_SizeDelta: {x: 1017.54456, y: 671.8874}
+  m_AnchoredPosition: {x: -367.38208, y: -254.30574}
+  m_SizeDelta: {x: -1017.5088, y: -671.8904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854497651
 MonoBehaviour:
@@ -4258,6 +4246,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854497649}
   m_CullTransparentMesh: 0
+--- !u!225 &1854497653
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854497649}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!4 &1907223113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6323763271428219696, guid: 27fe7992d21a7c2909874b3254bf98e1,

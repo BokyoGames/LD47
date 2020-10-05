@@ -24,7 +24,7 @@ public class DragAndDrop : MonoBehaviour
     void Start()
     {
         ui_description = GameObject.Find("TowerName").GetComponent<Text>();
-        canvas = GameObject.Find("TowerName").GetComponent<CanvasGroup>();
+        canvas = GameObject.Find("TowerPanel").GetComponent<CanvasGroup>();
         Cursor.visible = true;
         initial_position = gameObject.transform.position;
         activators = GameObject.FindGameObjectsWithTag("Activator");
