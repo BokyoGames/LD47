@@ -13,6 +13,8 @@ public class DragAndDrop : MonoBehaviour
     private Vector3 initial_position;
 
     private GameObject[] activators;
+    private AudioSource sound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class DragAndDrop : MonoBehaviour
         Cursor.visible = true;
         initial_position = gameObject.transform.position;
         activators = GameObject.FindGameObjectsWithTag("Activator");
+        sound = GameObject.Find("Shop").GetComponent<AudioSource>();
         // Debug.Log("Activator"); 
         // Debug.Log(activator.transform.position.x); 
    }
@@ -30,6 +33,7 @@ public class DragAndDrop : MonoBehaviour
             return;
 
         Debug.Log("Mouse down");
+        sound.Play();
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
         dragging = true;
 

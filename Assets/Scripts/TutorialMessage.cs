@@ -50,7 +50,9 @@ public class TutorialMessage : MonoBehaviour
         alarm.Play();
         ui_tutorial.enabled = true;
         canvas.alpha = 1f;
-        ui_tutorial.text = message[mex_index];
+        if(mex_index < message.Length)
+            ui_tutorial.text = message[mex_index];
+        
         mex_index++;
         Invoke("HideMessage", 7.5f);
     }
