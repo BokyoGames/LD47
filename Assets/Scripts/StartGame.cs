@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class StartGame : MonoBehaviour
 {
+    // AudioSource[] button_theme;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // button_theme = GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
