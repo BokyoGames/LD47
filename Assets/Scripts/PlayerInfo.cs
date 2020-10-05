@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerInfo : MonoBehaviour
 {
@@ -35,6 +36,11 @@ public class PlayerInfo : MonoBehaviour
         {
             if(i >= life_point)
                 health_bar[i].color = Color.black;
+        }
+
+        if(life_point < 0)
+        {
+            SceneManager.LoadSceneAsync("GameOverScene", LoadSceneMode.Single);
         }
     }
 
