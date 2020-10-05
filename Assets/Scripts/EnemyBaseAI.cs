@@ -108,6 +108,8 @@ public class EnemyBaseAI : MonoBehaviour
             float currentProgress = (1f / (float)iterations) * (float)i;
             // transform.LookAt (Vector3.Lerp (anchor1, Current (currentPoint), currentProgress));
             transform.position = Vector3.Lerp(Vector3.Lerp(anchor1, Current(currentPoint), currentProgress), Vector3.Lerp(Current(currentPoint), anchor2, currentProgress), currentProgress);
+            float rot_z = Mathf.Atan2(20, 0) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
             i++;
          }
          else 
