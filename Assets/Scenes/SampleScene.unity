@@ -896,6 +896,7 @@ RectTransform:
   m_LocalScale: {x: 0.018656716, y: 0.018656716, z: 0.018656716}
   m_Children:
   - {fileID: 1190534535}
+  - {fileID: 1078721256}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -985,7 +986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &528910094
 PrefabInstance:
@@ -1301,7 +1302,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
@@ -2470,6 +2471,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078721255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078721256}
+  - component: {fileID: 1078721258}
+  - component: {fileID: 1078721257}
+  - component: {fileID: 1078721259}
+  m_Layer: 5
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1078721256
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078721255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 506644531}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 141.2, y: -233.3}
+  m_SizeDelta: {x: 719.84894, y: 74.55937}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1078721257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078721255}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u201CGeneral Thunderer, it is truly an honor to serve under your command
+    in this epic battle. My name is Colonel Fuzzian Whaer and I am your Assigned
+    Tactical Assistant.\u201D"
+--- !u!222 &1078721258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078721255}
+  m_CullTransparentMesh: 0
+--- !u!114 &1078721259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078721255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc337cc1b572d05695e3d431342a58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1084623075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2520,7 +2614,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
@@ -3268,7 +3362,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
@@ -3337,7 +3431,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
@@ -3422,7 +3516,7 @@ PrefabInstance:
     - target: {fileID: 7865199957322606071, guid: 6ef04f02d2116da4bb4e0d9606fd933a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7865199957322606071, guid: 6ef04f02d2116da4bb4e0d9606fd933a,
         type: 3}
@@ -3831,7 +3925,7 @@ PrefabInstance:
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6501068072843997431, guid: 3c5385e4757700921a622d81287eb51c,
         type: 3}
@@ -3930,7 +4024,7 @@ PrefabInstance:
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
       propertyPath: next_spawn_time
-      value: 15
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
@@ -6426,6 +6520,11 @@ PrefabInstance:
       propertyPath: lineToFollow
       value: 
       objectReference: {fileID: 1384362948}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: next_spawn_time
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
 --- !u!1001 &8826329383305694220

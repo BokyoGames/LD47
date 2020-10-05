@@ -22,6 +22,7 @@ public class GameOver : MonoBehaviour
             Application.Quit();
         }
     }
+    
     public void QuitGame()
     {
         Debug.Log ("Close the app");

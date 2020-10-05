@@ -9,6 +9,8 @@ public class ShopLogic : MonoBehaviour
     private List<bool> buyed = new List<bool>();
 
     private PlayerInfo player_info;
+
+    private bool displayed_tutorial = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,13 @@ public class ShopLogic : MonoBehaviour
                     }
                     else
                     {
+                        if(!displayed_tutorial)
+                        {
+                            TutorialMessage tutorial = GameObject.Find("Tutorial").GetComponent<TutorialMessage>();
+                            tutorial.DisplayEnergyMessage();
+                            displayed_tutorial = true;
+                        }
+
                         light.enabled = false;
                         drag_and_drop.disabled = true;
                         tower_base.color = dark;
