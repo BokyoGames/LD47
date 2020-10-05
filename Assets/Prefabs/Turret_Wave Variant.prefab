@@ -135,6 +135,16 @@ PrefabInstance:
       propertyPath: tower_id
       value: A
       objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_name
+      value: W.A.V.E.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_description
+      value: Emits long-lasting lasers.
+      objectReference: {fileID: 0}
     - target: {fileID: 5140691069774417574, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_audioClip

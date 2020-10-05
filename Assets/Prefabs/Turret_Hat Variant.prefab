@@ -301,5 +301,15 @@ PrefabInstance:
       propertyPath: tower_id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_name
+      value: H.A.T.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277238172964320346, guid: bf815d494ed1b2b559fd9a8e5052baa8,
+        type: 3}
+      propertyPath: tower_description
+      value: Fires in different directions on up beats.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf815d494ed1b2b559fd9a8e5052baa8, type: 3}

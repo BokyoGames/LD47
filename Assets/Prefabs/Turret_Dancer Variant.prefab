@@ -210,6 +210,16 @@ PrefabInstance:
       propertyPath: tower_id
       value: B
       objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_name
+      value: The Dancer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121053917934548027, guid: d4e19b2003e958af992c5ebaddcfdd5f,
+        type: 3}
+      propertyPath: tower_description
+      value: Emits short lasers on down beats.
+      objectReference: {fileID: 0}
     - target: {fileID: 5140691069774417574, guid: d4e19b2003e958af992c5ebaddcfdd5f,
         type: 3}
       propertyPath: m_audioClip

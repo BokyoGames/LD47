@@ -558,6 +558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tower_id: 9
+  tower_name: The Stabber
+  tower_description: Emits short lasers in different directions.
   tower_beat: {fileID: 0}
   tower_shoot_direction:
   - {x: 100, y: 0, z: 0}

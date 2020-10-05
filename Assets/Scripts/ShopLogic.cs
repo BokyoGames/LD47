@@ -31,6 +31,9 @@ public class ShopLogic : MonoBehaviour
             GameObject tower = GameObject.Find("Shop/" + name);
             if(tower != null)
             {
+                AbstractEmitter a = tower.GetComponent<AbstractEmitter>();
+                a.price = price;
+
                 DragAndDrop drag_and_drop = tower.GetComponent<DragAndDrop>();
                 SpriteRenderer tower_base = GameObject.Find("Shop/" + name + "/Turret_Base").GetComponent<SpriteRenderer>();
                 SpriteRenderer tower_cannon = GameObject.Find("Shop/" + name + "/Turret_Cannon").GetComponent<SpriteRenderer>();

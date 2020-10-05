@@ -142,6 +142,16 @@ PrefabInstance:
       propertyPath: tower_id
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2900838366317720067, guid: 8d3edd93eb697e2c190363b738982e12,
+        type: 3}
+      propertyPath: tower_name
+      value: T.O.M.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900838366317720067, guid: 8d3edd93eb697e2c190363b738982e12,
+        type: 3}
+      propertyPath: tower_description
+      value: Fires multiple shots in bursts.
+      objectReference: {fileID: 0}
     - target: {fileID: 2900838366317720092, guid: 8d3edd93eb697e2c190363b738982e12,
         type: 3}
       propertyPath: m_LocalPosition.x

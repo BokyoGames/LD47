@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DragAndDrop : MonoBehaviour
 {
@@ -15,14 +16,20 @@ public class DragAndDrop : MonoBehaviour
     private GameObject[] activators;
     private AudioSource sound;
 
+    AbstractEmitter abstract_emitter;
+    Text ui_description;
+    CanvasGroup canvas;
 
     // Start is called before the first frame update
     void Start()
     {
+        ui_description = GameObject.Find("TowerName").GetComponent<Text>();
+        canvas = GameObject.Find("TowerName").GetComponent<CanvasGroup>();
         Cursor.visible = true;
         initial_position = gameObject.transform.position;
         activators = GameObject.FindGameObjectsWithTag("Activator");
         sound = GameObject.Find("Shop").GetComponent<AudioSource>();
+        abstract_emitter = GetComponent<AbstractEmitter>();
         // Debug.Log("Activator"); 
         // Debug.Log(activator.transform.position.x); 
    }
@@ -96,6 +103,17 @@ public class DragAndDrop : MonoBehaviour
             dragging = false;
             droppable = false;
         }
+    }
+
+    private void OnMouseEnter() 
+    {
+        ui_description.text = abstract_emitter.tower_name+"     "+abstract_emitter.price+"\n<i>"+abstract_emitter.tower_description+"</i>";
+        canvas.alpha = 1f;
+    }
+
+    private void OnMouseExit() 
+    {
+        canvas.alpha = 0f;
     }
  
     void Update()

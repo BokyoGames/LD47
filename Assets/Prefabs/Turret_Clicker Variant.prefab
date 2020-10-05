@@ -430,6 +430,16 @@ PrefabInstance:
       propertyPath: tower_id
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4967351217301295268, guid: a6c7434be12b0b6d39fe03fc231f6f1e,
+        type: 3}
+      propertyPath: tower_name
+      value: The Clicker
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967351217301295268, guid: a6c7434be12b0b6d39fe03fc231f6f1e,
+        type: 3}
+      propertyPath: tower_description
+      value: Fires continuously while sweeping up and down.
+      objectReference: {fileID: 0}
     - target: {fileID: 4967351217301295289, guid: a6c7434be12b0b6d39fe03fc231f6f1e,
         type: 3}
       propertyPath: m_Name

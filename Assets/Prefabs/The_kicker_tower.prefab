@@ -407,6 +407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d5c03a211dd6900a42ba89f8fdf8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tower_id: 0
+  tower_name: The Kicker
+  tower_description: Fires a shot every down beat.
   tower_beat: {fileID: 0}
   tower_shoot_direction:
   - {x: 1, y: 0, z: 0}

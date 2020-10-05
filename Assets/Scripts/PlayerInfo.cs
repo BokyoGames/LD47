@@ -39,7 +39,7 @@ public class PlayerInfo : MonoBehaviour
                 health_bar[i].color = Color.black;
         }
 
-        if(life_point < 0)
+        if(life_point <= 0)
         {
             SceneManager.LoadSceneAsync("GameOverScene", LoadSceneMode.Single);
         }

@@ -177,6 +177,16 @@ PrefabInstance:
       propertyPath: tower_id
       value: C
       objectReference: {fileID: 0}
+    - target: {fileID: 4849681336605426933, guid: 8754bbadb2088267ea0cd2ee8f143486,
+        type: 3}
+      propertyPath: tower_name
+      value: The Stringer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849681336605426933, guid: 8754bbadb2088267ea0cd2ee8f143486,
+        type: 3}
+      propertyPath: tower_description
+      value: Emits a sequence of short and long-lasting lasers.
+      objectReference: {fileID: 0}
     - target: {fileID: 5648769386686879200, guid: 8754bbadb2088267ea0cd2ee8f143486,
         type: 3}
       propertyPath: m_Sprite
