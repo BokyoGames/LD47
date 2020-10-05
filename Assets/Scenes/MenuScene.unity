@@ -358,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 2086041070102150465, guid: cab8d0a86bd3c47fab726a5fac875190,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 48
+      value: 34.7
       objectReference: {fileID: 0}
     - target: {fileID: 2086041070102150465, guid: cab8d0a86bd3c47fab726a5fac875190,
         type: 3}
@@ -550,7 +550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -109}
+  m_AnchoredPosition: {x: 0, y: -115}
   m_SizeDelta: {x: 247.52246, y: 71.91211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347253717
@@ -980,7 +980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 235}
+  m_AnchoredPosition: {x: 7, y: 197.68}
   m_SizeDelta: {x: 937.36273, y: 375.46832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491050529
@@ -1135,8 +1135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: -229}
-  m_SizeDelta: {x: 664.41, y: 118.75508}
+  m_AnchoredPosition: {x: -3.1, y: -230.76}
+  m_SizeDelta: {x: 553.6, y: 118.75508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867339886
 MonoBehaviour:
@@ -1161,17 +1161,17 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: d4d90945743125848a36e7c35816dcd6, type: 3}
     m_FontSize: 27
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mostly game dev: Daniele Baschieri \nMostly music:        Etienne Guichard\nMostly
-    graphics:   Michele Montini"
+  m_Text: "Mostly game dev: Daniele Baschieri \nMostly music: Etienne Guichard\nMostly
+    graphics: Michele Montini"
 --- !u!222 &1867339887
 CanvasRenderer:
   m_ObjectHideFlags: 0
