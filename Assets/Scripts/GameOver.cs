@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public string base_url = "http:2.224.242.38/8beats/";
+    public string base_url = "http://2.224.242.38/8beats/";
     AudioSource[] menu_theme;
     Text final_score;
     // Start is called before the first frame update
