@@ -23,4 +23,16 @@ public class StartGame : MonoBehaviour
         Debug.Log("Play the game!");
         SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Single);
     }
+
+    public void PlanetEarthPlay()
+    {
+        Debug.Log("Play the game!");
+        SceneManager.LoadSceneAsync("TutorialScene", LoadSceneMode.Single);
+    }
+
+    public void PlanetShakeassionPlay()
+    {
+        Debug.Log("Play the game!");
+        SceneManager.LoadSceneAsync("TutorialScene2", LoadSceneMode.Single);
+    }
 }
