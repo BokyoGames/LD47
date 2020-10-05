@@ -716,6 +716,11 @@ PrefabInstance:
       propertyPath: period
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: spwan_probability
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
 --- !u!1 &419695250
@@ -1251,7 +1256,7 @@ PrefabInstance:
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
       propertyPath: spwan_probability
-      value: 8
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
@@ -1421,7 +1426,7 @@ PrefabInstance:
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
       propertyPath: spwan_probability
-      value: 33
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
@@ -1767,7 +1772,7 @@ PrefabInstance:
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
       propertyPath: period
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
@@ -2226,7 +2231,7 @@ PrefabInstance:
     - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
         type: 3}
       propertyPath: period
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
@@ -4243,6 +4248,11 @@ PrefabInstance:
       propertyPath: next_spawn_time
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: period
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
 --- !u!1 &1854497649
@@ -4569,6 +4579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: next_spawn_time
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: period
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
@@ -7143,6 +7158,16 @@ PrefabInstance:
         type: 3}
       propertyPath: next_spawn_time
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: period
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490853085497020659, guid: 75953c21470674ebbb95f7729a13c353,
+        type: 3}
+      propertyPath: spwan_probability
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75953c21470674ebbb95f7729a13c353, type: 3}
